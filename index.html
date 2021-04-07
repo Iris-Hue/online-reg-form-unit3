@@ -7,38 +7,58 @@
   <meta name="description" content="" />
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-<form class="" action="index.html" method="post">
+<form action="index.html" method="post">
   <h1>The Code Review</h1>
   <h2>Signup for our newsletter</h2>
   <p>Get the latest news on how your code is doing right in your inbox</p>
-  <h2>contact information</h2>
+
   <fieldset>
-    <legend>Full Name</legend>
+
+    <legend>Contact Information</legend>
+
+    <label for="name">Full Name</label>
     <input type="text" id="name" name="user_name">
 
-    <legend>Email Address</legend>
+    <label for="mail">Email Address</label>
     <input type="email" id="mail" name="user_email">
 
-    <legend>Phone Number</legend>
+    <label for="phone">Phone Number</label>
     <input type="telephone" id="phone" name="user_telephone">
 
-    <legend>Street Address</legend>
+    <label for="address">Street Address</label>
     <input type="street address" id="address" name="user_address">
 
-    <legend>City</legend>
+    <label for="city">City</label>
     <input type="city" id="city" name="user_city">
 
-    <legend>State</legend>
+    <label for="state">State</label>
     <input type="state" id="state" name="user_state">
+    <select id="state" name="user_state">
+      <option value="alabama_state">Alabama State</option>
+      <option value="california_state">California State</option>
+      <option value="texas_state">Texas State</option>
+      <option value="colorado_state">Colorado State</option>
 
-    <legend>Zip Code</legend>
-    <input type="zip" id="zip code" name="user_zipcode">
+    </select>
+
+    <label for="zipcode">Zip Code</label>
+    <input type="zip" id="zipcode" name="user_zipcode">
   </fieldset>
+
   <fieldset>
-    <legend></legend>
-  </fieldset>
+      <h2>Newsletter</h2>
+      <p>Select the newsletters you would like to receive</p>
+      <legend></legend>
+      <label for="other topics">Other topics you'd like to hear about</label>
+      <textarea id="other topics" name="user_topics"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
 
 
 
