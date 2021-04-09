@@ -6,14 +6,19 @@
 }
 html body {
   text-align: center;
+  line-height: 1.6;
+  width: 100%;
+  margin: 0 auto;
   height: 100%;
   font-family: 'Alegreya', serif;
+
 }
 header h1 {
   font-style: uppercase;
   background-color: black;
   color: white;
   padding: 20px;
+  margin-top: 0;
 }
 h2 {
   padding-bottom: 10px;
@@ -21,12 +26,52 @@ h2 {
 }
 p {
   color: gray;
-  padding-bottom: 25px;
-  border-bottom: 4px solid black;
+  text-align: center;
+  padding-bottom: 10px;
+  max-width: 90%
+
 }
+.specialline{
+  border-top: 4px solid black;
+  padding-top: 3px;
+  border-bottom: 2px solid black;
+
+}
+legend {
+  font-size: 25px;
+  text-align: left;
+  padding: 10px;
+}
+  fieldset {
+    border: 0px;
+}
+
 .content {
+  display: block;
+  margin: 0 auto;
   color: purple;
+
 }
+
 .input-content {
-  display: inline-block;
+  display: block;
+  padding: 2px 5px;
+  border: 5px;
+}
+.input-content label {
+  display: block;
+  text-align: left;
+  padding: 10px;
+}
+.input-content input {
+  display: block;
+  border: none;
+  background-blend-mode: multiply;
+  background-color: lightgray;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+}
+.input-content [placeholder] {
+  text-align: right;
 }
