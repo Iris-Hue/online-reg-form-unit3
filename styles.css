@@ -82,7 +82,9 @@ legend {
 .input-content [placeholder] {
   text-align: right;
 }
-
+.input-content input:focus {
+  color: red;
+}
 .zipcode  input {
   display: block;
   border: none;
