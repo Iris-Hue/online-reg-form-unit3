@@ -1,5 +1,5 @@
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,14 +7,18 @@
 html body {
   text-align: center;
   line-height: 1.6;
+  font-size: 14px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
   font-family: 'Alegreya', serif;
 
 }
+main {
+  padding: 0 1rem;
+}
 header h1 {
-  font-style: uppercase;
+  text-transform: uppercase;
   background-color: black;
   color: white;
   padding: 20px;
@@ -28,7 +32,7 @@ p {
   color: gray;
   text-align: center;
   padding-bottom: 10px;
-  max-width: 90%
+  margin: 0 auto;
 
 }
 .specialline{
@@ -44,6 +48,8 @@ legend {
 }
   fieldset {
     border: 0px;
+    padding: 0px;
+
 }
 
 .content {
@@ -63,15 +69,67 @@ legend {
   text-align: left;
   padding: 10px;
 }
-.input-content input {
+.input-content input, select, textarea {
   display: block;
   border: none;
   background-blend-mode: multiply;
-  background-color: lightgray;
+  background-color: #f2f2f2;
   height: 50px;
   width: 100%;
   padding: 10px;
 }
+
 .input-content [placeholder] {
   text-align: right;
+}
+
+.zipcode  input {
+  display: block;
+  border: none;
+  background-blend-mode: multiply;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50%;
+  padding: 20px;
+
+}
+.line {
+  border-bottom: 2px solid black;
+  padding: 20px 20px 5px 20px;
+}
+section {
+  display: block;
+  flex-flow: column;
+
+}
+section div {
+  text-align: left;
+  padding: 1px;
+
+}
+textarea {
+  display: block;
+  border: none;
+  background-blend-mode: multiply;
+  background-color: #f2f2f2;
+  height: 90px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+button {
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: #00cccc;
+  color: white;
+}
+
+footer p {
+  padding-bottom: 80px;
+  border-bottom: 20px;
 }

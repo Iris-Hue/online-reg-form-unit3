@@ -13,92 +13,97 @@
 
 <body>
 <form action="index.html" method="post">
-  <header>
-    <h1>The Code Review</h1>
-  </header>
+    <header>
+      <h1>The Code Review</h1>
+    </header>
 
   <main>
-  <h2>Signup for our newsletter</h2>
-  <p>Get the latest news on how your code is doing right in your inbox</p><br>
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p><br>
 
-  <section class="content">
       <div class="specialline"></div><br>
-    <fieldset>
+<section class="content">
 
+  <fieldset>
     <legend>Contact Information</legend>
 
-<div class="input-content">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="user_name" placeholder="Required" required>
-</div>
+        <div class="input-content">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+        </div>
 
-<div class="input-content">
-    <label for="mail">Email Address</label>
-    <input type="email" id="mail" name="user_email" placeholder="Required" required>
-</div>
+        <div class="input-content">
+            <label for="mail">Email Address</label>
+            <input type="email" id="mail" name="user_email" placeholder="Required" required>
+        </div>
 
-<div class="input-content">
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="user_telephone">
-</div>
+        <div class="input-content">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user_telephone">
+        </div>
 
-<div class="input-content">
-    <label for="address">Street Address</label>
-    <input type="text" id="address" name="user_address">
-</div>
+        <div class="input-content">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address">
+        </div>
 
-<div class="input-content">
-    <label for="city">City</label>
-    <input type="text" id="city" name="user_city">
-</div>
+        <div class="input-content">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+        </div>
 
 <div class="input-content">
   <label for="state">State</label>
-  <input type="text" id="state" name="user_state">
-    <select id="state" name="state">
-
+    <select id="state" name="user_state">
+      <option value="choosestate">Choose State</option>
+      <optgroup label=ChooseState></optgroup>
       <option value="alabama state">Alabama State</option>
       <option value="california state">California State</option>
       <option value="texas state">Texas State</option>
       <option value="colorado state">Colorado State</option>
-
     </select>
-
-<div class="input-content">
-    <label for="zipcode">Zip Code</label>
-    <input type="text" id="zipcode" name="user_zipcode">
   </div>
+
+  <div class="zipcode">
+        <label for="zipcode">Zip Code</label>
+        <input type="text" id="zipcode" name="user_zipcode">
+      </div>
   </fieldset>
+
+<div class=line></div><br>
 
   <fieldset>
       <legend>Newsletter</legend>
       <p>Select the newsletters you would like to receive</p>
-      <legend>Newsletter</legend>
 
-      <input type="checkbox" id="html news" name="user_news" value="html news"><label for="html news">HTML News</label><br>
-      <input type="checkbox" id="css news" name="user_news" value="css news"><label for="css news">CSS News</label><br>
-      <input type="checkbox" id="javascript news" name="user_news" value="javascript news"><label for="javascript news">Javascript News</label><br>
-
-      <label>Newsletter Format</label>
-
-      <input type="radio" id="html" name="user_newsletter format" value="html"><label for="html"class="light">Plain Text>HTML</label><br>
-      <input type="radio" id="plain text" name="user_newsletter format" value="plain text"><label for="plain text" class="light">Plain Text</label><br>
+    <div>
+        <input type="checkbox" id="htmlnews" name="user_news" value="html news"><label for="htmlnews"> HTML News</label><br><br>
+        <input type="checkbox" id="cssnews" name="user_news" value="css news"><label for="cssnews"> CSS News</label><br><br>
+        <input type="checkbox" id="javascriptnews" name="user_news" value="javascript news"><label for="javascriptnews"> Javascript News</label><br>
 
 
-      <label for="other topics">Other topics you'd like to hear about</label>
-      <textarea id="other topics" name="user_topics"></textarea>
+      <br><label>Newsletter Format</label><br>
 
-    </fieldset>
+        <input type="radio" id="html" name="user_newsletter format" value="html"><label for="html" class="light">HTML</label><br>
+        <input type="radio" id="plaintext" name="user_newsletter format" value="plain text"><label for="plaintext" class="light">Plain Text</label><br><br>
 
-    <button type="submit">Submit</button>
-  </form>
+
+        <label>Other topics you'd like to hear about</label>
+        <textarea id="othertopics" name="user_topics"></textarea>
+    </div>
+  </fieldset>
+
     </section>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
 
+    </main>
+  </form>
 
 <footer>
   <p>Copyright the Code Review</p>
 </footer>
 
-</main>
-</body>
+ </body>
 </html>
