@@ -142,8 +142,8 @@ footer p {
 }
 
 @media (min-width:768px) {
-  display: block;
-}
+
+
      main {
        width: 60%;
        margin: 0 auto;
@@ -155,14 +155,17 @@ footer p {
      }
 
 @media (min-width:1024px) {
-      div {
-       display: inline-block;
+      .input-content {
+       display: : flex;
        flex-wrap: wrap;
 }
      }
-     input {
+     label {
 
        flex-basis: 20%;
+     }
+     input {
+       flex-basis: 50%;
      }
 
   }
