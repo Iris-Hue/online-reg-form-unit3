@@ -1,13 +1,13 @@
-
+/* Base Style/Mobile View*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html body {
+body {
   text-align: center;
   line-height: 1em;
-    background-color: #d7e3f5;
+  background-color: #d7e3f5;
   font-size: 18px;
   width: 100%;
   margin: 0 auto;
@@ -79,7 +79,8 @@ legend {
 
 }
 
-.input-content [placeholder] {
+.input-content {
+  input::placeholder;
   text-align: right;
 
 }
@@ -137,4 +138,35 @@ button {
 footer p {
   padding-bottom: 80px;
   border-bottom: 20px;
+  text-align: center;
 }
+
+@media (min-width:768px) {
+  display: block;
+}
+     main {
+       width: 60%;
+       margin: 0 auto;
+     }
+     p {
+       text-align: left;
+     }
+
+     }
+
+@media (min-width:1024px) {
+      div {
+       display: inline-block;
+       flex-wrap: wrap;
+}
+     }
+     input {
+
+       flex-basis: 20%;
+     }
+
+  }
+
+
+
+*/
