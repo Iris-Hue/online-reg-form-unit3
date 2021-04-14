@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Online Registration form</title>
-  <meta name="description" content="" />
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -73,7 +72,8 @@
 
   <fieldset>
       <legend>Newsletter</legend>
-      <p>Select the newsletters you would like to receive</p>
+
+      <p><article>Select the newsletters you would like to receive</article></p>
 
     <div>
         <input type="checkbox" id="htmlnews" name="user_news" value="html news"><label for="htmlnews"> HTML News</label><br><br>
@@ -81,19 +81,18 @@
         <input type="checkbox" id="javascriptnews" name="user_news" value="javascript news"><label for="javascriptnews"> Javascript News</label><br>
 
 
-      <br><label>Newsletter Format</label><br>
+      <br><label><article>Newsletter Format</article></label><br>
 
         <input type="radio" id="html" name="user_newsletter format" value="html"><label for="html" class="light">HTML</label><br>
         <input type="radio" id="plaintext" name="user_newsletter format" value="plain text"><label for="plaintext" class="light">Plain Text</label><br><br>
 
-
         <label for="othertopics">Other topics you'd like to hear about</label>
-        <textarea id="othertopics" name="user_topics"></textarea>
+        <textarea class="input-content" id="othertopics" name="user_topics"></textarea>
     </div>
   </fieldset>
 
     </section>
-  <div>
+      <div class="input-content">
     <button type="submit">Submit</button>
   </div>
 

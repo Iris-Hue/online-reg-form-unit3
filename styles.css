@@ -1,7 +1,5 @@
 /* Base Style/Mobile View*/
-*{
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
 body {
@@ -78,12 +76,15 @@ legend {
   padding: 10px;
 
 }
-
-.input-content {
-  input::placeholder;
+input[placeholder] {
   text-align: right;
 
 }
+
+.input-content {
+  text-align: right;
+}
+
 
 .zipcode  input {
   display: block;
@@ -95,7 +96,7 @@ legend {
 
 }
 input:focus {
-  background-color:
+  background-color:#e6e6e6;
   color: blue;
 }
 
@@ -143,33 +144,50 @@ footer p {
 
 @media (min-width:768px) {
 
-
      main {
-       width: 60%;
+       width: 70%;
        margin: 0 auto;
      }
      p {
-       text-align: left;
+       text-align: center;
      }
-
+     label, article {
+       text-align: left;
+       padding: 5px;
+     }
      }
 
 @media (min-width:1024px) {
-      .input-content {
-       display: : flex;
-       flex-wrap: wrap;
-}
-     }
-     label {
 
-       flex-basis: 20%;
-     }
-     input {
-       flex-basis: 50%;
-     }
-
+  main {
+    width: 70%;
+    margin: 0 auto;
   }
+      .input-content, label, zipcode {
+       display: flex;
+       flex-direction: row;
+       flex-basis: 25%;
+       flex-grow: 1;
+       height: 50px;
+       padding: 50px 0px 35px 0px;
+       margin: auto 0;
+}
+.input-content input, select, option {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 75%;
+  padding: 20px 20px 20px 20px;
+  border-bottom: 50px;
+   width:70%;
+}
 
+input {
+  border: 1px solid white;
+}
+footer p {
+  padding-bottom: 80px;
+  border-bottom: 20px;
+  text-align: center;
+}
 
-
-*/
+}
