@@ -62,7 +62,7 @@
     </select>
   </div>
 
-  <div class="zipcode input-content">
+      <div class="zipcode input-content">
         <label for="zipcode">Zip Code</label>
         <input type="text" id="zipcode" name="user_zipcode" placeholder="Required" required>
       </div>
@@ -73,15 +73,15 @@
   <fieldset>
       <legend>Newsletter</legend>
 
-      <p><article>Select the newsletters you would like to receive</article></p>
+      <p>Select the newsletters you would like to receive</p>
 
-    <div>
+    <div id="boxes">
         <input type="checkbox" id="htmlnews" name="user_news" value="html news"><label for="htmlnews"> HTML News</label><br><br>
         <input type="checkbox" id="cssnews" name="user_news" value="css news"><label for="cssnews"> CSS News</label><br><br>
         <input type="checkbox" id="javascriptnews" name="user_news" value="javascript news"><label for="javascriptnews"> Javascript News</label><br>
 
 
-      <br><label><article>Newsletter Format</article></label><br>
+      <br><label>Newsletter Format</label><br>
 
         <input type="radio" id="html" name="user_newsletter format" value="html"><label for="html" class="light">HTML</label><br>
         <input type="radio" id="plaintext" name="user_newsletter format" value="plain text"><label for="plaintext" class="light">Plain Text</label><br><br>
@@ -89,10 +89,10 @@
         <label for="othertopics">Other topics you'd like to hear about</label>
         <textarea class="input-content" id="othertopics" name="user_topics"></textarea>
     </div>
-  </fieldset>
-
+    </fieldset>
     </section>
-      <div class="input-content">
+
+  <div class="input-content">
     <button type="submit">Submit</button>
   </div>
 
