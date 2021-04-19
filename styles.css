@@ -159,17 +159,11 @@ footer  {
      label {
        text-align: left;
      }
-     }
-
-@media (min-width:1024px) {
+     
   body {
     font-size: 22px;
   }
 
-  main {
-    width: 70%;
-    margin: 0 auto;
-  }
   legend {
     font-size: 30px;
   }
@@ -212,5 +206,4 @@ footer  {
   border-bottom: 20px;
   text-align: center;
 }
-
 }
